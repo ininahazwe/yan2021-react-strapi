@@ -2,7 +2,12 @@ import styled from 'styled-components';
 
 export const InfoContainer = styled.div`
   color: #fff;
-  background: ${(lightBg) => (lightBg ? 'var(--violet)' : 'var(--rouge)')};
+  background-color: #45509d;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3CradialGradient id='a' cx='0' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23a85a81'/%3E%3Cstop offset='1' stop-color='%23a85a81' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='1200' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%2345509d'/%3E%3Cstop offset='1' stop-color='%2345509d' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='600' cy='0' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23a85a81'/%3E%3Cstop offset='1' stop-color='%23a85a81' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='600' cy='800' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%2345509d'/%3E%3Cstop offset='1' stop-color='%2345509d' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23f16262'/%3E%3Cstop offset='1' stop-color='%23f16262' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='1200' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%2345509d'/%3E%3Cstop offset='1' stop-color='%2345509d' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' width='1200' height='800'/%3E%3Crect fill='url(%23c)' width='1200' height='800'/%3E%3Crect fill='url(%23d)' width='1200' height='800'/%3E%3Crect fill='url(%23e)' width='1200' height='800'/%3E%3Crect fill='url(%23f)' width='1200' height='800'/%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0 15px;
+  border-radius: 15px;
   
   @media screen and (max-width: 768px){
     padding: 100px 0;
@@ -48,6 +53,7 @@ export const TextWrapper = styled.div`
   max-width: 540px;
   padding-top: 0;
   padding-bottom: 60px;
+  font-family: 'Open Sans', sans-serif;
 `;
 
 export const TopLine = styled.p`
@@ -78,7 +84,8 @@ export const Subtitle = styled.p`
   margin-bottom: 35px;
   font-size: 18px;
   line-height: 24px;
-  color: ${({ darkText }) =>(darkText ? '#010606' : '#fff')};
+  color: ${({ darkText }) =>(darkText ? 'var(--blanc)' : 'var(--gris)')};
+  font-family: 'Open Sans', sans-serif;;
 `;
 
 export const BtnWrap = styled.div`

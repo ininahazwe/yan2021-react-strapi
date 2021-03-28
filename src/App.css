@@ -1,10 +1,15 @@
 @import url("https://use.typekit.net/kvx8phn.css");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: "tekton-pro",sans-serif;
+}
+
+body{
+    background-color: var(--rouge);
 }
 
 :root{
@@ -35,3 +40,5 @@ a{
 .section{
     padding: 10%;
 }
+
+

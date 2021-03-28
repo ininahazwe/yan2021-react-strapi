@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import {Link as LinkR} from 'react-router-dom';
 import {Link as LinkS} from 'react-scroll';
-import {FaHeart, FaPhone} from "react-icons/all";
+import {FaPhone} from "react-icons/all";
 
 export const Nav = styled.nav`
   background: ${({scrollNav}) => (scrollNav ? 'var(--blanc)' : 'transparent')};
@@ -25,8 +25,8 @@ export const Nav = styled.nav`
 `;
 
 export const NavbarContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   height: 80px;
   z-index: 1;
   width: 100%;
@@ -42,11 +42,13 @@ export const NavLogo = styled(LinkR)`
   margin-left: 24px;
 `
 export const Title = styled.h1`
-  color:${({scrollNav}) => (scrollNav ? 'var(--rouge)' : 'var(--white)')};
+  color:${({scrollNav}) => (scrollNav ? 'var(--rouge)' : 'var(--blanc)')};
+  font-size: 2rem;
 `;
 
 export const LogoSrc = styled.img`
   width: 80px;
+  padding: 8px;
 `;
 
 export const MobileIcon = styled.div`
@@ -87,9 +89,7 @@ export const NavItem = styled.li`
   height: 80px;
   
     a{
-      color: var(--color4);
-      display: flex;
-      align-items: center;
+      color:${({scrollNav}) => (scrollNav ? 'var(--rouge)' : 'var(--blanc)')};
       text-decoration: none;
       padding: 0 1rem;
       height: 90%;
@@ -105,16 +105,23 @@ export const NavLinks = styled(LinkS)`
   padding: 0 1rem;
   height: 90%;
   cursor: pointer;
-  
+  font-size: 1rem;
   
       &.active {
       border-bottom: 3px solid var(--rouge);
       }
   
       a{
-        color: var(--color4);
+        color: var(--blanc);
       }
 `;
+
+export const Gauche = styled.div`
+  display: flex;
+`
+export const Droite = styled.div`
+  display: flex;
+`
 
 export const NavBtn = styled.nav`
   display: flex;
