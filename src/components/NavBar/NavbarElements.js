@@ -44,6 +44,9 @@ export const NavLogo = styled(LinkR)`
 export const Title = styled.h1`
   color:${({scrollNav}) => (scrollNav ? 'var(--rouge)' : 'var(--blanc)')};
   font-size: 2rem;
+    @media screen and (max-width: 768px){
+      font-size: 1.5rem;
+    }
 `;
 
 export const LogoSrc = styled.img`
@@ -89,16 +92,15 @@ export const NavItem = styled.li`
   height: 80px;
   
     a{
-      color:${({scrollNav}) => (scrollNav ? 'var(--rouge)' : 'var(--blanc)')};
+      color:${({scrollNav}) => (scrollNav ? 'var(--gris)' : 'var(--blanc)')};
       text-decoration: none;
       padding: 0 1rem;
-      height: 90%;
       cursor: pointer;
     }
 `;
 
 export const NavLinks = styled(LinkS)`
-  color: var(--color4);
+  color:${({scrollNav}) => (scrollNav ? 'var(--rouge)' : 'var(--blanc)')};
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -112,7 +114,7 @@ export const NavLinks = styled(LinkS)`
       }
   
       a{
-        color: var(--blanc);
+        color:${({scrollNav}) => (scrollNav ? 'var(--blanc)' : 'var(--rouge)')};
       }
 `;
 

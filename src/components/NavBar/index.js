@@ -54,22 +54,22 @@ const Navbar = ({toggle}) => {
                             </Gauche>
                             <Droite>
                                 <NavMenu>
-                                    <NavItem>
+                                    <NavItem scrollNav={scrollNav}>
                                         <NavLinks to='services'
                                                   smooth={true} duration={500} spy={true} exact='true' offset={-80}
                                         >Our services</NavLinks>
                                     </NavItem>
-                                    <NavItem>
+                                    <NavItem scrollNav={scrollNav}>
                                         <NavLinks to='about'
                                                   smooth={true} duration={500} spy={true} exact='true' offset={0}
                                         >About</NavLinks>
                                     </NavItem>
-                                    <NavItem>
+                                    <NavItem scrollNav={scrollNav}>
                                         <NavLinks to='gallery'
                                                   smooth={true} duration={500} spy={true} exact='true' offset={0}
                                         >Gallery</NavLinks>
                                     </NavItem>
-                                    <NavItem>
+                                    <NavItem scrollNav={scrollNav}>
                                         <NavLinks to='contact'
                                                   smooth={true} duration={500} spy={true} exact='true' offset={0}
                                         >Contact us</NavLinks>

@@ -6,6 +6,8 @@ import Intro from "../components/IntroSection";
 import {homeObjOne} from "../components/IntroSection/Data";
 import Services from "../components/Services";
 import ContactForm from "../components/ContactForm";
+import Footer from "../components/Footer";
+import Images from "../components/Gallery";
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -20,7 +22,9 @@ const Home = () => {
             <HeroSection />
             <Intro {...homeObjOne}/>
             <Services />
+            <Images />
             <ContactForm />
+            <Footer />
         </>
     );
 };
